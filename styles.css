@@ -1,0 +1,173 @@
+
+html, body {
+  margin: 0;
+  height: 100vh;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+
+}
+
+body {
+  width: 100vw;
+  background: url("./images/pattern-background-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: auto;
+  position: relative;
+  background: white;
+  width: 323px;
+  border-radius: 20px;
+  box-shadow: 0px 24px 24px 0px hsla(245, 75%, 52%, 0.1);
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+
+.main {
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+h1 {
+  color: hsl(223, 47%, 23%);
+  font-size: 22px;
+  font-weight: 900;
+  margin: 0;
+}
+p {
+  margin: 0%;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: normal;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  background: hsla(225, 100%, 98%, 1);
+  align-items: center;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.plan-summary {
+  display: flex;
+  gap: 16px;
+  text-align: left;
+  align-items: center;
+
+}
+
+.plan-name {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.plan-price {
+  font-size: 15px;
+}
+
+a.change-plan:any-link {
+  color: hsl(245, 75%, 52%);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+a.change-plan:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+
+
+.proceed {
+  margin: 0;
+  padding: 16px 8px;
+  border: none;
+  border-radius: 8px;
+  background: hsl(245, 75%, 52%);
+  color: white;
+  font-size: 14px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  box-shadow: 0px 16px 16px 0px hsla(245, 75%, 52%, 0.15);
+}
+
+.proceed:hover {
+  opacity: 0.7;
+}
+
+a.cancel-order:any-link {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a.cancel-order:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  color: hsl(224, 23%, 55%);
+}
+
+.attribution > a, .attribution > a:any-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+
+  body {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .container{
+    width: 450px;
+    height: 697px;
+  }
+
+  .main {
+    padding: 44px 50px;
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .plan {
+    padding: 24px 20px;
+  }
+  .plan-summary {
+    gap: 20px;
+  }
+
+  .plan-name {
+    font-size: 16px;
+  }
+
+  .plan-price {
+    font-size: 16px;
+  }
+  .proceed {
+    padding: 16px auto;
+    margin: 8px 0;
+  }
+}
